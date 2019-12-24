@@ -4,7 +4,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
-                lorem
+                <h1>Dashboard</h1>
             </div>
         );
     };
