@@ -28,9 +28,6 @@ class Header extends Component {
                             Feedback Collector
                         </Link>
 
-                        <a href="/" className="brand-logo">
-
-                        </a>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
                             {this.renderContent()}
                         </ul>
