@@ -12,15 +12,14 @@ class Header extends Component {
             case false:
                 return <li><a href="/auth/google">Login with Google</a></li>;
             default:
-                return [<li key="1"><a href="/">
-                    {this.props.auth.name.givenName}</a></li>,
+                return [<li key="4" style={{ margin: '0 10px' }}>Credits: {this.props.auth.credits}</li>,
+                <li key="1"><a href="/"> {this.props.auth.name.givenName}</a></li>,
                 <li key="3"><Stripe /></li>,
                 <li key="2"><a href="/api/logout">Logout</a></li>];
         }
     }
 
     render() {
-        console.log(this.props);
         return (
             <div>
                 <nav className="AppNav">
